@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script lists visible files, showing only part after the first dash if present
+for file in *; do
+  [ -f "$file" ] && echo "${file#*-}"
+done
